@@ -4,7 +4,7 @@
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
 		$name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL); 
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $subject = trim($_POST["subject"]);
         $message = trim($_POST["message"]);
 
@@ -18,10 +18,10 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "support@rstheme.com";
+        $recipient = "emersonunes500@gmail.com";
 
         // Set the email subject.
-        $subject = "Rubrash - Personal - New contact from $name";
+        $subject = "Site - Personal - New contact from $name";
 
         // Build the email content.
         $email_content = "Name: $name\n";
